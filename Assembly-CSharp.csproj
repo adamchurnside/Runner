@@ -55,7 +55,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Obstacle.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
-     <Compile Include="Assets\Spawner.cs" />
+     <Compile Include="Assets\Scripts\Spawner.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/achurnside/Documents/Endless Runner/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
