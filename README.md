@@ -1,3 +1,2 @@
 # Runner
-Group Project
-Endless runner style game developed in Unity, C#.
+Group Project.  Endless runner style game developed in Unity, C#.
