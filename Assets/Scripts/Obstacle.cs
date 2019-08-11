@@ -7,6 +7,8 @@ public class Obstacle : MonoBehaviour
     public int damage = 1;
     public float speed;
 
+    public GameObject effect;
+
     private void Update()
     {
         // move the obstable left
@@ -18,6 +20,8 @@ public class Obstacle : MonoBehaviour
         // check if the player collides with the obstable
         if (other.CompareTag("Player"))
         {
+            Instantiate(effect, transform.position, Quaternion.identity);
+
             // damage dealt, remove health and destroy the obstable
             other.GetComponent<Player>().health -= damage;
             Debug.Log(other.GetComponent<Player>().health);

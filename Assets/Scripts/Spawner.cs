@@ -19,6 +19,7 @@ public class Spawner : MonoBehaviour
             int rand = Random.Range(0, obstaclePatterns.Length);
 
             Instantiate(obstaclePatterns[rand], transform.position, Quaternion.identity);
+            
             timeBtwSpawn = startTimeBtwSpawn;
 
             // reduce start time between spawn
@@ -32,3 +33,5 @@ public class Spawner : MonoBehaviour
         }
     }
 }
+
+//Instantiate(obstaclePatterns[rand], t.p, Q);
