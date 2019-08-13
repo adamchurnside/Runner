@@ -9,6 +9,13 @@ public class Obstacle : MonoBehaviour
 
     public GameObject effect;
 
+    private Shake shake;
+
+    void Start()
+    {
+        shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<Shake>();
+    }
+
     private void Update()
     {
         // move the obstable left
@@ -20,7 +27,10 @@ public class Obstacle : MonoBehaviour
         // check if the player collides with the obstable
         if (other.CompareTag("Player"))
         {
+            // instatiate particle effect on collision
             Instantiate(effect, transform.position, Quaternion.identity);
+
+            shake.CamShake();
 
             // damage dealt, remove health and destroy the obstable
             other.GetComponent<Player>().health -= damage;
