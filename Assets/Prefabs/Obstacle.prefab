@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3071455475879496328}
   - component: {fileID: 3071455475879496331}
   - component: {fileID: 3071455475879496330}
+  - component: {fileID: -1715326491320949092}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Untagged
@@ -56,6 +57,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -67,6 +69,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -110,3 +113,16 @@ MonoBehaviour:
   damage: 1
   speed: 5
   effect: {fileID: 1639515848834239226, guid: 0d0a7e9ad17a86b439f05a243589f34e, type: 3}
+--- !u!114 &-1715326491320949092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3071455475879496333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70123e86f5896b44d8124d7c95682a40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  litetime: 10
