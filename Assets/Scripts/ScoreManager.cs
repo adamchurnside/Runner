@@ -4,6 +4,16 @@ using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
+    public int score;
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Obstacle"))
+        {
+            score++;
+            Debug.Log(score);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
