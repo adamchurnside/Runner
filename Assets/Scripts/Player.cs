@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -15,10 +16,12 @@ public class Player : MonoBehaviour
     public int health = 3;
 
     public GameObject effect;
+    public Text healthDisplay;
 
     // Update is called once per frame
     private void Update()
     {
+        healthDisplay.text = health.ToString();
         // on death
         if (health <= 0)
         {
