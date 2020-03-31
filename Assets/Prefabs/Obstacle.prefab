@@ -113,6 +113,8 @@ MonoBehaviour:
   damage: 1
   speed: 6
   effect: {fileID: 1639515848834239226, guid: 0d0a7e9ad17a86b439f05a243589f34e, type: 3}
+  explosionSound: {fileID: 8318351591809421059, guid: 74b85f7042738334292b41b76b77851c,
+    type: 3}
 --- !u!114 &-1715326491320949092
 MonoBehaviour:
   m_ObjectHideFlags: 0
