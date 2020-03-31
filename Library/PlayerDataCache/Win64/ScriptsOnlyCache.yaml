@@ -828,7 +828,7 @@ ScriptsOnlyBuild:
     className: MainMenu
   - hash:
       serializedVersion: 2
-      Hash: d835e37be8caf473a0d64dc941f2a2a8
+      Hash: 00b926680901033490d81d6f1fe0b422
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: OptionsMenu
@@ -837,4 +837,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Start.unity
   - Assets/Scenes/Game.unity
   - Assets/Scenes/GameOver.unity
-  playerPath: C:/Users/Adam/Documents/Runner/Test/Endless Runner.exe
+  playerPath: C:/Users/Adam/Documents/Runner/Builds/Windows/Endless Runner.exe
