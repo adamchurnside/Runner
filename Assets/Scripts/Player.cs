@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
 
     public GameObject effect;
     public Text healthDisplay;
+    public GameObject gameOver;
 
     // Update is called once per frame
     private void Update()
@@ -26,7 +27,10 @@ public class Player : MonoBehaviour
         if (health <= 0)
         {
             // restart scene
-            SceneManager.LoadScene("GameOver");
+            gameOver.SetActive(true);
+            Destroy(gameObject);
+
+            //SceneManager.LoadScene("GameOver");
             //Restart Scene --OLD--
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
