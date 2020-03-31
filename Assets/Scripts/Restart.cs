@@ -19,6 +19,10 @@ public class Restart : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene("Game");                                   
-        }   
+        }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            SceneManager.LoadScene("Start");
+        }
     }
 }
