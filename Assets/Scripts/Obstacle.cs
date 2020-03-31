@@ -11,6 +11,8 @@ public class Obstacle : MonoBehaviour
 
     private Shake shake;
 
+    public GameObject explosionSound;
+
     void Start()
     {
         shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<Shake>();
@@ -27,6 +29,7 @@ public class Obstacle : MonoBehaviour
         // check if the player collides with the obstable
         if (other.CompareTag("Player"))
         {
+            Instantiate(explosionSound, transform.position, Quaternion.identity);
             // instatiate particle effect on collision
             Instantiate(effect, transform.position, Quaternion.identity);
 
