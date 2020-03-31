@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - Destroyer
     - MainMenu
     - Obstacle
+    - OptionsMenu
     - Player
     - Restart
     - ScoreManager
@@ -27,9 +28,15 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.Dropdown
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Mask
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
+    - UnityEngine.UI.Toggle
     com.unity.multiplayer-hlapi.Runtime.dll:
     - UnityEngine.Networking.NetworkCallbacks
   sceneClasses:
@@ -159,17 +166,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11396}
     - Class: 114
+      Script: {instanceID: 11400}
+    - Class: 114
       Script: {instanceID: 11444}
     - Class: 114
+      Script: {instanceID: 11826}
+    - Class: 114
       Script: {instanceID: 11958}
+    - Class: 114
+      Script: {instanceID: 12222}
     - Class: 114
       Script: {instanceID: 12476}
     - Class: 114
       Script: {instanceID: 13064}
     - Class: 114
+      Script: {instanceID: 13510}
+    - Class: 114
       Script: {instanceID: 13528}
     - Class: 114
+      Script: {instanceID: 13544}
+    - Class: 114
+      Script: {instanceID: 13564}
+    - Class: 114
       Script: {instanceID: 15814}
+    - Class: 114
+      Script: {instanceID: 17524}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -185,6 +206,12 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -799,6 +826,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MainMenu
+  - hash:
+      serializedVersion: 2
+      Hash: d835e37be8caf473a0d64dc941f2a2a8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OptionsMenu
   platform: 19
   scenePathNames:
   - Assets/Scenes/Start.unity
