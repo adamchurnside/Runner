@@ -3,7 +3,11 @@ guid: 55b9723951521484d87371ac66d0777e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - effect: {instanceID: 0}
+  - healthDisplay: {instanceID: 0}
+  - gameOver: {instanceID: 0}
+  - popSound: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

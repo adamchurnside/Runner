@@ -18,6 +18,8 @@ public class Player : MonoBehaviour
     public GameObject effect;
     public Text healthDisplay;
     public GameObject gameOver;
+    public GameObject popSound;
+    public GameObject gameOverSound;
 
     // Update is called once per frame
     private void Update()
@@ -27,6 +29,7 @@ public class Player : MonoBehaviour
         if (health <= 0)
         {
             // restart scene
+            Instantiate(gameOverSound, transform.position, Quaternion.identity);
             gameOver.SetActive(true);
             Destroy(gameObject);
 
@@ -41,6 +44,8 @@ public class Player : MonoBehaviour
         // check if the players y position is less than the max height
         if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < maxHeight)
         {
+            Instantiate(popSound, transform.position, Quaternion.identity);
+
             PlayerEffect();
             // move the player up the y axis on up arrow
             targetPos = new Vector2(transform.position.x, transform.position.y + Yincrement);
@@ -49,6 +54,7 @@ public class Player : MonoBehaviour
         } // check if the players y position is greater than the min height
         else if (Input.GetKeyDown(KeyCode.DownArrow) && transform.position.y > minHeight)
         {
+            Instantiate(popSound, transform.position, Quaternion.identity);
             PlayerEffect();
             // move the player down the y axis on down arrow
             targetPos = new Vector2(transform.position.x, transform.position.y - Yincrement);
