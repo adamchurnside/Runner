@@ -30,7 +30,8 @@ public class Player : MonoBehaviour
         {
             // restart scene
             Instantiate(gameOverSound, transform.position, Quaternion.identity);
-            gameOver.SetActive(true);
+            
+            gameOver.SetActive(true);            
             Destroy(gameObject); 
 
             //SceneManager.LoadScene("GameOver");
