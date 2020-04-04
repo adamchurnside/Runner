@@ -9,7 +9,7 @@ public class ScoreManager : MonoBehaviour
     public Text scoreDisplay;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        scoreDisplay.text = score.ToString();
+        scoreDisplay.text = "Score: " + score.ToString();
         if (collision.CompareTag("Obstacle"))
         {
             score++;
